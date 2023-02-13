@@ -8,9 +8,62 @@ body {
   align-items: center;
   display: flex;
   font-family: "Roboto Mono", sans-serif;
-  flex-direction: column;
-  margin: 0px;
+  /* flex-direction: column; */
+  margin: 0;
   overflow: hidden;
   justify-content: center;
   height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 55vw;
+}
+
+.title {
+    
+    width: 200px;
+}
+
+.panel {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+    border-radius: 15px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    position: relative;
+    transition-duration: 0.7s;
+    animation: none;
+    -webkit-animation: none;
+}
+
+.panel h3 {
+    position: absolute;
+    font-size: 24px;
+    bottom: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active {
+    flex: 1.25;
+    margin: 2px;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 100vw;
+    }
+    .panel:nth-of-type(4) {
+        display: none;
+    }
 }
