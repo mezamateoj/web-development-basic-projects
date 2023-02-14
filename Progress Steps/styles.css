@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;700&display=swap");
 
 :root {
-    --line-border-fill: #3498db;
+    --line-border-fill: #7B8FA1;
     --line-border-empty: #e0e0e0;
 }
 
@@ -56,7 +56,7 @@ body {
     width: 0%;
     transform: translateY(-50%);  /* put line on the center */
     z-index: -1; /* made the line to go back from the numbers */
-    transition: 4s ease;
+    transition: 0.4s ease;
 }
 
 .circle {
@@ -69,7 +69,7 @@ body {
     width: 30px;
     height: 30px;
     border: 3px solid var(--line-border-empty);
-    transition: 0.4s ease;
+    transition: 0.7s ease;
 }
 
 .circle.active {
@@ -85,7 +85,9 @@ body {
     font-family: inherit;
     padding: 8px 30px;
     margin: 5px;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 550;
+
 }
 
 .btn:active {
