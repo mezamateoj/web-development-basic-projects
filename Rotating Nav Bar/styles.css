@@ -1,16 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;700&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  align-items: center;
-  display: flex;
-  font-family: "Roboto Mono", sans-serif;
-  /* flex-direction: column; */
+  background-color: #333;
+  color: #222;
+  font-family: "Lato", sans-serif;
   margin: 0;
-  overflow: hidden;
-  justify-content: center;
-  height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+    background-color: #fafafa;
 }
